@@ -12,12 +12,6 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-def start(update, context):
-    """Send a message when the command /start is issued."""
-    update.message.reply_text(
-        'Hello, my Name is Professor Oak! \n' 
-        'I can give you more information on Pokemon!'
-    )
 
 def pokedex(update, context): 
     """ Searches the Pokemon API for more information and return the data """
